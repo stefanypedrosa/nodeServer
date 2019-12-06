@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function recuperar(){
+                fetch("http://localhost:3000/lista/", {"method":"GET"})
+                    .then(repsonse => response.json())
+                    .then(json => exibe(json));
+            }
+            function exibe(json){
+                var func;
+                for(i=0;i<json.length; i++){
+                    list = json[i];
+                    document.getElementById("resultado").innerHTML += list.nome;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
