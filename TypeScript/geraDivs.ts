@@ -3,4 +3,4 @@ function geraDivs(... parametros:string[]):void{
         console.log(`<div id='id${i+1}'> ${parametros[i]} </div>`);
     }
 }
-geraDivs('valorA', 'valorB', 'valorC', 'valorD', 'valorE');
+geraDivs('valorA', 'valorB', 'valorC', 'valorD', 'valorE', 'valorF', 'valorG', 'valorH', 'valorI');
